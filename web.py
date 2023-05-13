@@ -4,7 +4,8 @@ import streamlit as st
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_input as mobilenet_v2_preprocess_input
-
+st.header("Hidden Hunger")
+st.write("To find micronutrient deficiency using human nails and eyes")
 model = tf.keras.models.load_model(r"C:\Users\Dell\Downloads\app model\resnet152v2.hdf5")
 ### load file
 uploaded_file = st.file_uploader("Choose a image file", type="jpg")
